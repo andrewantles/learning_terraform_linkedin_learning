@@ -72,9 +72,9 @@ module "alb" {
   ]
 
   listeners = [
-    http_tcp = {
-      port     = 80
-      protocol = "HTTP"
+    {
+      port               = 80
+      protocol           = "HTTP"
       target_group_index = 0
     }
   ]
