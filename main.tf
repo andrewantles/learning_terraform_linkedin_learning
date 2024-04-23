@@ -71,7 +71,7 @@ module "alb" {
       protocol = "HTTP"
 
       forward = {
-        target_group_id = aws_instance.blog.id
+        target_group_key = "blog-instance"
       }
     }
   }
